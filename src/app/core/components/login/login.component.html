@@ -1,0 +1,6 @@
+
+<div *ngIf="!authService.user; else loggedIn">
+  <button (click)="login()">Login with Google</button>
+</div>
+<ng-template #loggedIn>
+</ng-template>
